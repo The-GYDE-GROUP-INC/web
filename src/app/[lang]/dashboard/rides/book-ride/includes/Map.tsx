@@ -1,25 +1,5 @@
 'use client';
 
-// import { GoogleMap, Marker } from '@react-google-maps/api';
-
-// const containerStyle = {
-//   width: '100%',
-//   height: '400px',
-// };
-
-// const center = {
-//   lat: 37.437041393899676,
-//   lng: -4.191635586788259,
-// };
-
-// export const Map = () => {
-//   // options={{ zoomControl: true, tilt: 0, gestureHandling: 'auto', mapTypeId: 'satellite' }}
-//   return (
-//     <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18}>
-//       <Marker position={center} />
-//     </GoogleMap>
-//   );
-// };
 import { useEffect, useRef, useState } from 'react';
 
 type Location = {
@@ -75,7 +55,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({ onUpdateLocation }) 
   useEffect(() => {
     if (!isScriptLoaded || !mapRef.current) return;
 
-    const map = new window.google.maps.Map(mapRef.current, {
+    new window.google.maps.Map(mapRef.current, {
       center: {
         lat: 47.989921667414194,
         lng: 18.28125,
@@ -200,7 +180,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({ onUpdateLocation }) 
                   >
                     <div className='w-8 h-8 rounded-full bg-[#f7f7f7] flex items-center justify-center'>
                       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' aria-hidden='true' role='presentation' focusable='false' className='block w-4 h-4 fill-dark-gray'>
-                        <path d='M28 7h-8V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v24c0 1.1.9 2 2 2h24a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM8 7a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0 4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0 4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 13H7v-5c0-1.1.9-2 2-2h4a2 2 0 0 1 2 2zm-1-11a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm8 19h-2V9h2zm4-11a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z'></path>
+                        <path d='M28 7h-8V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v24c0 1.1.9 2 2 2h24a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM8 7a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0 4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0 4a1 1 0[...]
                       </svg>
                     </div>
                     <p className='truncate'>{prediction.description}</p>
