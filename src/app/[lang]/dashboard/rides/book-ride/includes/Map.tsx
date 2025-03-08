@@ -52,18 +52,18 @@ export const MapComponent: React.FC<MapComponentProps> = ({ onUpdateLocation }) 
 
   const isScriptLoaded = useScript(`https://maps.googleapis.com/maps/api/js?key=${GOOGLE_API_KEY}&libraries=places`);
 
-  useEffect(() => {
-    if (!isScriptLoaded || !mapRef.current) return;
+ useEffect(() => {
+  if (!isScriptLoaded || !mapRef.current) return;
 
-    new window.google.maps.Map(mapRef.current, {
-      center: {
-        lat: 47.989921667414194,
-        lng: 18.28125,
-      },
-      zoom: 11,
-      mapTypeControl: false,
-    });
-  }, [isScriptLoaded]);
+  const map = new window.google.maps.Map(mapRef.current, {
+    center: {
+      lat: 47.989921667414194,
+      lng: 18.28125,
+    },
+    zoom: 11,
+    mapTypeControl: false,
+  });
+}, [isScriptLoaded]);
 
   const showLocation = (position: GeolocationPosition) => {
     setLoading(true);
