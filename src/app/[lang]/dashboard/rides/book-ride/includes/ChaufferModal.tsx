@@ -64,7 +64,7 @@ export const ChaufferModal = ({ onClose }: Props) => {
                 <p className='text-lg font-medium leading-5'>Availability Time</p>
               </div>
               <div className='bg-neutral-200 p-2 rounded-lg mt-3'>
-                <ScrollableDates selected='Today' onClick={(val) => {}} dates={dates} />
+                <ScrollableDates selected='Today' onClick={() => {}} dates={dates} />
               </div>
               <div className='flex items-center flex-wrap gap-2 mt-3 mb-6'>
                 {['09.00 am', '10.00 am', '11.00 am', '12.00 pm', '01.00 pm', '02.00 pm', '03.00 pm', '04.00 pm'].map((time) => (
