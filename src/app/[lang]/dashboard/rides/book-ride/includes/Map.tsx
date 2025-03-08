@@ -183,7 +183,7 @@ useEffect(() => {
                         <path d='M28 7h-8V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v24c0 1.1.9 2 2 2h24a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM8 7a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0 4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0 4a1 1 0[...]
                       </svg>
                     </div>
-                    <p className='truncate'>{prediction.description}</p>
+                   <p className='truncate'>{prediction.description}</p>
                   </li>
                 ))}
               </ul>
