@@ -55,7 +55,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({ onUpdateLocation }) 
  useEffect(() => {
   if (!isScriptLoaded || !mapRef.current) return;
 
-  const map = new window.google.maps.Map(mapRef.current, {
+ 
     center: {
       lat: 47.989921667414194,
       lng: 18.28125,
