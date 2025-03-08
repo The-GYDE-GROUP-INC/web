@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("../../assets/fonts/HelveticaNeue/HelveticaNeueThin.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("../../assets/fonts/HelveticaNeue/HelveticaNeueUltraLight.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("../../assets/fonts/HelveticaNeue/HelveticaNeueLight.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("../../assets/fonts/HelveticaNeue/HelveticaNeueMedium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("../../assets/fonts/HelveticaNeue/HelveticaNeueBold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("../../assets/fonts/HelveticaNeue/HelveticaNeueHeavy.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* PPNeueMontreal Font Variants */
+@font-face {
+    font-family: "PPNeueMontreal";
+    src: url("../../assets/fonts/PPNeueMontreal/ppneuemontreal-thin.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PPNeueMontreal";
+    src: url("../../assets/fonts/PPNeueMontreal/ppneuemontreal-book.woff") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PPNeueMontreal";
+    src: url("../../assets/fonts/PPNeueMontreal/ppneuemontreal-medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PPNeueMontreal";
+    src: url("../../assets/fonts/PPNeueMontreal/ppneuemontreal-bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+.container {
+    @apply mx-auto;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
