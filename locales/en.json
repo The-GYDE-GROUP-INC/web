@@ -1,0 +1,83 @@
+{
+  "testing": "Testing the next internalization!",
+  "next": "Next",
+  "continue": "Continue",
+  "email": "Email Address",
+  "profile": "Profile",
+  "landing": {
+    "title": "Experience comfort, Tailored to your needs",
+    "continue-phone": "Continue with Phone",
+    "termsA": "By continuing, you have read and agree to our",
+    "termsB": "terms and condition."
+  },
+  "phone": {
+    "title": "Add Your Phone",
+    "subtitle": "Enter your phone number to get yourself verified and ready to start your ride.",
+    "invalid": "Enter a valid phone number",
+    "required": "Phone number is required",
+    "placeholder": "Your phone number",
+    "number": "Phone Number"
+  },
+  "code-verification": {
+    "title": "Enter Code",
+    "subtitle": "We sent verification code to your phone number {number}",
+    "invalid-otp": "Invalid OTP. It must be exactly 6 digits.",
+    "otp-required": "OTP is required"
+  },
+  "welcome": {
+    "title": "Welcome Aboard!",
+    "subtitle": "You’ve unlocked access to exclusive, personalized chauffeur services with Gyde.",
+    "hi": "Hi {name}!",
+    "subtitle2": "Welcome to Gyde. You’ve unlocked access to exclusive, personalized chauffeur services."
+  },
+  "onboarding": {
+    "email": {
+      "title": "Stay Connected",
+      "subtitle": "To provide you with tailored services and updates, please share your email with us.",
+      "invalid-email": "Enter a valid email address",
+      "email-required": "Email Address is required",
+      "email-placeholder": "Your email address"
+    },
+    "profile": {
+      "profile-error": "Invalid file type. Only images are allowed.",
+      "your-profile": "Your Profile",
+      "profile-subtitle": "Provide your basic details for a personalized experience.",
+      "firstName": "First Name",
+      "firstName-error": "First name is required",
+      "firstName-placeholder": "Your first name",
+      "lastName": "Last Name",
+      "lastName-error": "Last name is required",
+      "lastName-placeholder": "Your last name",
+      "companyName": "Company Name",
+      "companyName-error": "Company name is required",
+      "companyName-placeholder": "Your company name"
+    }
+  },
+  "dashboard": {
+    "rides": "Rides",
+    "upcoming-rides": "Upcoming Rides",
+    "past-rides": "Past Rides",
+    "canceled-rides": "Canceled Rides",
+    "book-ride": "Book a Ride",
+    "booking-confirmation": "Booking Confirmation",
+    "contact-driver": "Contact Driver",
+    "safety": "Safety",
+    "ratings": "Feedback & Ratings",
+    "ride-book": {
+      "pickup-location": "Pickup Location",
+      "pickup-location-placeholder": "Pickup Location",
+      "pickup-location-required": "Pickup location is required",
+      "dropoff-location": "Drop-off Location",
+      "dropoff-location-placeholder": "Enter destination",
+      "dropoff-location-required": "Drop-off location is required",
+      "pickup-time": "Pickup Time",
+      "pickup-date": "Pickup Date",
+      "pickup-time-required": "Pickup time is required",
+      "pickup-date-required": "Pickup date is required",
+      "pickup-date-past-error": "Pickup time cannot be in the past",
+      "confirm-order": "Confirm Order",
+      "next-step": "Next Step",
+      "arriving-time": "Arriving in {time}"
+    }
+  }
+}
