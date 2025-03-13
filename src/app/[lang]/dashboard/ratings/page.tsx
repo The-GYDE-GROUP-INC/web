@@ -1,6 +1,7 @@
 import { Button } from '@/components/Button';
 import { BankCard } from '@/components/icons/BankCard';
 import { Star } from '@/components/icons/Star';
+import { FeedBack } from '@/components/pages/dashboard/rating/FeedBack';
 import { useTranslations } from 'next-intl';
 
 export default function Page() {
@@ -9,7 +10,7 @@ export default function Page() {
   return (
     <>
       <h1 className='text-3xl font-medium font-montreal'>{t('dashboard.ratings')}</h1>
-      <div className='mt-10 max-w-lg'>
+      <div className='py-10 max-w-lg'>
         <div className='group flex items-center justify-between gap-6 p-6 border border-neutral-100 rounded-xl bg-white shadow hover:shadow-md transition-shadow duration-300'>
           {/* Left Section */}
           <div className='flex items-center gap-5'>
@@ -30,7 +31,7 @@ export default function Page() {
         <div className='pb-3 pt-4 pr-3 pl-6 shadow rounded-lg border border-neutral-100 bg-white mt-6'>
           <ol className='relative border-s-2 border-neutral-400'>
             <li className='mb-6 ms-6'>
-              <span className='absolute flex items-center justify-center w-4 h-4 border-4 border-neutral-400 bg-neutral-200 rounded-full -left-2 ring-4 ring-[#f6f6f6]' />
+              <span className='absolute flex items-center justify-center w-4 h-4 border-4 border-neutral-400 bg-neutral-200 rounded-full top-0.5 -left-2 ring-4 ring-[#f6f6f6]' />
               <p className='text-nowrap overflow-hidden text-ellipsis'>1234 W Maple Ave McBee, South Carolina 1234 W Maple Ave McBee, South Carolina</p>
             </li>
             <li className='ms-6'>
@@ -58,6 +59,7 @@ export default function Page() {
             Details
           </Button>
         </div>
+        <FeedBack />
       </div>
     </>
   );
