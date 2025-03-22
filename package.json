@@ -14,7 +14,7 @@
     "formik": "^2.4.6",
     "moment": "^2.30.1",
     "moment-timezone": "^0.5.47",
-    "next": "15.1.7",
+    "next": "15.2.3",
     "next-intl": "^3.26.5",
     "nextjs-toploader": "^3.7.15",
     "react": "^19.0.0",
